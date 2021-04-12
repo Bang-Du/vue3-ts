@@ -1,6 +1,6 @@
 # bo
 
-## Project setup
+## Project setup 
 ```
 yarn install
 ```
