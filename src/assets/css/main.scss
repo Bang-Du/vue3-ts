@@ -1,0 +1,135 @@
+body {
+	line-height: normal;
+	color: #333;
+	background: #F4F8F9;
+	font-family: "Microsoft Yahei", sans-serif;
+}
+body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, select, table, td, img, div, p{
+	margin: 0;
+	padding: 0;
+  border: 0;
+  font-size: 14px;
+}
+ul, ol, li{
+	list-style-type: none;
+}
+select, input, img, textarea, button{
+	vertical-align: middle; 
+}
+a:link, a:visited {
+	color: #333;
+	text-decoration: none;
+}
+a:hover{
+	color: $--color-primary;
+	text-decoration: none;
+}
+html{
+	width: 100%;
+	height: 100%;
+}
+.clear::before, .clear::after{
+  content: "";
+  display:table;
+}
+.clear::after{ /* For IE 6/7 (trigger hasLayout) */
+  clear:both;
+  height:0;
+  font-size:0;
+}
+.clear{
+  zoom:1;
+  clear:both;
+  height:0;
+  font-size:0;
+}
+.clearfix::after, .clearTo::after{
+  content:'';
+  display:block;
+  overflow:hidden;
+  height:0;
+  clear:both;
+}
+input::-webkit-input-placeholder { color: #c1c6cd;}
+input::-moz-placeholder { color: #c1c6cd;}
+input:-ms-input-placeholder { color: #c1c6cd;}
+input:-moz-placeholder { color: #c1c6cd;}
+
+textarea{
+  font-family: "Microsoft Yahei", sans-serif;
+  resize: none;
+}
+.textOf{
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+}
+.textLimit{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+.cur-poiter{ cursor: pointer;}
+.T-l{ text-align: left;}
+.T-c{ text-align: center;}
+.T-r{ text-align: right;}
+.fl{ float: left;}
+.fr{ float: right;}
+
+.m_t0{ margin-top: 0 !important;}
+.m_t6{ margin-top: 6px !important;}
+.m_t10{ margin-top: 10px !important;}
+.m_t16{ margin-top: 16px !important;}
+.m_t20{ margin-top: 20px !important;}
+.m_t30{ margin-top: 30px !important;}
+.m_b0 {margin-bottom: 0 !important;}
+.m_b6{ margin-bottom: 6px !important;}
+.m_b10{ margin-bottom: 10px !important;}
+.m_b16{ margin-bottom: 16px !important;}
+.m_b20{ margin-bottom: 20px !important;}
+.m_l0{ margin-left: 0 !important;}
+.m_l6{ margin-left: 6px !important;}
+.m_l8{ margin-left: 8px !important;}
+.m_l10{ margin-left: 10px !important;}
+.m_l14{ margin-left: 14px !important;}
+.m_l20{ margin-left: 20px !important;}
+.m_l30{ margin-left: 30px !important;}
+.m_r0{ margin-right: 0 !important;}
+.m_r6{ margin-right: 6px !important;}
+.m_r10{ margin-right: 10px !important;}
+.m_r20{ margin-right: 20px !important;}
+.m_r40 {margin-right: 40px !important;}
+.p_t10{ padding-top: 10px !important;}
+.p_t20{ padding-top: 20px !important;}
+.p_b10{ padding-bottom: 10px !important;}
+.p_b20{ padding-bottom: 20px !important;}
+.p_l10{ padding-left: 10px !important;}
+.p_l20{ padding-left: 20px !important;}
+.p_r10{ padding-right: 10px !important;}
+.p_r20{ padding-right: 20px !important;}
+.mar-none{ margin: 0 !important;}
+
+.w-auto{ width: 100%;}
+.w-auto85{ width: 85%;}
+.pos-r { position: relative;}
+
+.disabled > input{ border: 0; }
+
+// flex 相关 类名
+.flex { display: flex; }
+.align-center { align-items: center; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+
+
+.footer{
+	position: fixed !important;
+	right: 0;
+	bottom: 0;
+	width: calc(100% - 156px);
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 0 -4px 6px rgba(203, 214, 230, .5);
+	z-index: 10;
+}

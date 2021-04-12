@@ -1,0 +1,53 @@
+:root{
+  --font10: 10px;
+  --font12: 12px;
+  --font13: 13px;
+  --font14: 14px;
+  --font15: 15px;
+  --font16: 16px;
+  --font18: 18px;
+  --font20: 20px;
+  --font22: 22px;
+  --font24: 24px;
+  --font26: 26px;
+  --font28: 28px;
+}
+$--color-primary: #43A5FF !default;
+$--color-success: #67c23a !default;
+$--color-warning: #e6a23c !default;
+$--color-danger: #ff3434 !default;
+$--color-info: #909399 !default;
+$--color-white: #fff;
+$color-hr: #dae8eb; /* 所有分割线 - 包括虚线和实线 */
+$color-gray6: #cbd6e6; /* 描边，左上角图标，tab，叉(白色背景下) */
+$color-gray9: #9aa0af; /* 浅色偏蓝字体， 叉(灰色背景下) */
+$color-gray0: #c1c6cd; /* 文本框，文本域 默认字体颜色 */
+$color-hover: #f5f7fa;
+$color-disabled: #f0f0f0;
+$color-default: #23CDA0;
+$color-lightPrimary: #D5F6EB;
+$color-chat: #35e0b1;
+$color-red: #ff3434;
+$color-lightBlue: #7ac0ff;
+$color-lightRed: #ffa4a4;
+$color-blue: #5da3f3;
+$color-lightBlueBg: #daebff;
+$color-bgP: #F4F8F9;
+$color-orange: #ff9625;
+$color-shallowOrange: #FFF3E3;
+$color-border: #DCDFE6;
+/* 改变 icon 字体路径变量，必需 */
+// $--font-path: '~element-ui/lib/theme-chalk/fonts';
+// @import "~element-ui/packages/theme-chalk/src/index";
+// @import "~element-ui/packages/theme-chalk/src/common/var";
+// @import "~element-ui/packages/theme-chalk/src/button";
+// @import "~element-ui/packages/theme-chalk/src/input";
+// @import "~element-ui/packages/theme-chalk/src/select";
+// @import "~element-ui/packages/theme-chalk/src/select-dropdown";
+// @import "~element-ui/packages/theme-chalk/src/radio";
+// @import "~element-ui/packages/theme-chalk/src/radio-button";
+// @import "~element-ui/packages/theme-chalk/src/cascader";
+// @import "~element-ui/packages/theme-chalk/src/dialog";
+// @import "~element-ui/packages/theme-chalk/src/tabs";
+// @import "~element-ui/packages/theme-chalk/src/pagination";
+// @import "~element-ui/packages/theme-chalk/src/dropdown";

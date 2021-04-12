@@ -1,0 +1,17 @@
+
+
+// 单行文字省略
+@mixin text_overflow($max_width: 100px) {
+  max-width: $max_width;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+// 多行文字省略
+@mixin text_over_line($lines: 2) {
+  -webkit-line-clamp: $lines; 
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  word-break: break-all;
+}

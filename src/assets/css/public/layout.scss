@@ -1,0 +1,121 @@
+.el-header, .el-main, .el-footer{
+    margin: 0 auto;
+    padding: 0;
+    overflow: unset;
+}
+.el-main{
+  position: relative;
+  height: calc(100vh - 56px);
+  overflow: auto;
+  padding: 20px 20px 0 !important;
+  background-color: #fff;
+}
+.el-aside{
+  display: flex;
+  flex-direction: column;
+	width: 160px !important;
+	height: calc(100vh - 56px);
+	font-size: 14px;
+	color: #b1b4c5;
+	background-color: #2D3645;
+  overflow: hidden;
+  transition: width 300ms;
+}
+.isCollapse {
+  position: relative;
+  height: 48px;
+  i {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: 22px;
+    cursor: pointer;
+  }
+}
+.width_64  { width: 64px !important; } // 这个是折叠后的导航栏宽度
+.width_180 { width: 180px !important; }
+.width_200 { width: 200px !important; }
+.width_220 { width: 220px !important; }
+.width_240 { width: 240px !important; }
+.width_260 { width: 260px !important; }
+.width_auto{ width: auto !important; }
+/*
+  这里设置的 滚动条样式 覆盖全局的
+  因为要设置成自定义样式，但是 el-table 的滚动条宽度是默认宽度17px；
+  所以修改了源码中滚动条处 gutter 的宽度
+  webkit内核的为6px，与下面的 scrollbar 宽度一样
+  其他情况按默认的处理，修改的地方在下方
+  node_modules\element-ui\lib\table.js 第2180行
+  this.gutterWidth = navigator.userAgent.indexOf('WebKit') > -1 ? 6 : scrollbar_width_default()();
+*/
+.el-aside, .el-main{
+  ::-webkit-scrollbar{
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-thumb{
+    border-radius: 8px;
+    background-color: #E5E5E5;
+  }
+  ::-webkit-scrollbar-track {
+    border-radius: 8px;
+    background-color: transparent;
+  }
+}
+.el-aside{
+  &::-webkit-scrollbar{
+    width: 6px;
+    height: 6px;
+  }
+  &::-webkit-scrollbar-thumb{
+    border-radius: 8px;
+    background-color: #2C3C53;
+  }
+  &::-webkit-scrollbar-track {
+    border-radius: 8px;
+    background-color: #253477;
+  }
+}
+.el-header{
+	padding: 0 !important;
+  width: 100%;
+  color: #fff;
+  background-color: $--color-primary;
+}
+.el-drawer__header span:focus {
+  outline: 0 !important;
+}
+.el-popover-service{
+	position: relative;
+  padding: 10px;
+	.close{
+		position: absolute;
+		padding: 5px;
+		color: $color-gray6;
+		top: -10px;
+		right: -10px;
+		z-index: 1;
+		cursor: pointer;
+	}
+	img{
+		margin: 0 auto 10px;
+		display: block;
+		width: 170px;
+		height: 170px;
+	}
+	.text{
+		line-height: 1.6;
+		font-size: 14px;
+		text-align: center;
+  }
+  .li{
+    line-height: 30px;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+  }
+}
+.el-message{
+  min-width: 150px !important;
+}
